@@ -6,18 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'I am in the AppComponent';
-        this.name = '';
+var ServerComponent = (function () {
+    function ServerComponent() {
     }
-    AppComponent = __decorate([
+    ServerComponent = __decorate([
         core_1.Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
+            selector: 'app-server',
+            templateUrl: './server.component.html'
         })
-    ], AppComponent);
-    return AppComponent;
+    ], ServerComponent);
+    return ServerComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.ServerComponent = ServerComponent;
