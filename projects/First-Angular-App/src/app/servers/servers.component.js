@@ -14,7 +14,7 @@ var ServersComponent = (function () {
     ServersComponent = __decorate([
         core_1.Component({
             selector: 'app-servers',
-            template: "<app-server></app-server>\n             <app-server></app-server>\n             <app-server></app-server>",
+            templateUrl: './servers.component.html',
             styleUrls: ['./servers.component.css']
         })
     ], ServersComponent);
