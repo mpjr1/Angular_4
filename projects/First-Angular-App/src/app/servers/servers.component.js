@@ -10,11 +10,15 @@ var ServersComponent = (function () {
     function ServersComponent() {
         var _this = this;
         this.allowNewServer = false;
+        this.serverCreationStatus = 'No server was created!';
         setTimeout(function () {
             _this.allowNewServer = true;
         }, 2000);
     }
     ServersComponent.prototype.ngOnInit = function () {
+    };
+    ServersComponent.prototype.onCreateServer = function () {
+        this.serverCreationStatus = 'Server was created!';
     };
     ServersComponent = __decorate([
         core_1.Component({
