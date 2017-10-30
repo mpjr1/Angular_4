@@ -8,6 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var ServersComponent = (function () {
     function ServersComponent() {
+        var _this = this;
+        this.allowNewServer = false;
+        setTimeout(function () {
+            _this.allowNewServer = true;
+        }, 2000);
     }
     ServersComponent.prototype.ngOnInit = function () {
     };
