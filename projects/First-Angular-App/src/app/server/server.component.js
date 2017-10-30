@@ -8,7 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var ServerComponent = (function () {
     function ServerComponent() {
+        this.serverId = 10;
+        this.serverStatus = 'offline';
     }
+    ServerComponent.prototype.getServerStatus = function () {
+        return this.serverStatus;
+    };
     ServerComponent = __decorate([
         core_1.Component({
             selector: 'app-server',
