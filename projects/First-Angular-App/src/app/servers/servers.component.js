@@ -11,6 +11,7 @@ var ServersComponent = (function () {
         var _this = this;
         this.allowNewServer = false;
         this.serverCreationStatus = 'No server was created!';
+        this.serverName = 'Testserver';
         setTimeout(function () {
             _this.allowNewServer = true;
         }, 2000);
@@ -19,6 +20,9 @@ var ServersComponent = (function () {
     };
     ServersComponent.prototype.onCreateServer = function () {
         this.serverCreationStatus = 'Server was created!';
+    };
+    ServersComponent.prototype.onUpdateServerName = function (event) {
+        this.serverName = event.target.value;
     };
     ServersComponent = __decorate([
         core_1.Component({
