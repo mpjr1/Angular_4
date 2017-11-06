@@ -10,9 +10,13 @@ var ServerComponent = (function () {
     function ServerComponent() {
         this.serverId = 10;
         this.serverStatus = 'offline';
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
     }
     ServerComponent.prototype.getServerStatus = function () {
         return this.serverStatus;
+    };
+    ServerComponent.prototype.getColor = function () {
+        return this.serverStatus === 'online' ? 'green' : 'red';
     };
     ServerComponent = __decorate([
         core_1.Component({
