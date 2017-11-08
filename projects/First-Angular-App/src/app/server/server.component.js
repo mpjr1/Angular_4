@@ -21,7 +21,8 @@ var ServerComponent = (function () {
     ServerComponent = __decorate([
         core_1.Component({
             selector: 'app-server',
-            templateUrl: './server.component.html'
+            templateUrl: './server.component.html',
+            styles: ["\n                .online {\n                    color: white;\n                }\n            "]
         })
     ], ServerComponent);
     return ServerComponent;
