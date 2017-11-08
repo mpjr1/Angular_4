@@ -13,6 +13,7 @@ var ServersComponent = (function () {
         this.serverCreationStatus = 'No server was created!';
         this.serverName = 'Testserver';
         this.serverCreated = false;
+        this.servers = ['Testserver', 'Testserver 2'];
         setTimeout(function () {
             _this.allowNewServer = true;
         }, 2000);
@@ -21,6 +22,7 @@ var ServersComponent = (function () {
     };
     ServersComponent.prototype.onCreateServer = function () {
         this.serverCreated = true;
+        this.servers.push(this.serverName);
         this.serverCreationStatus = 'Server was created!';
     };
     ServersComponent.prototype.onUpdateServerName = function (event) {
