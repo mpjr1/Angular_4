@@ -10,7 +10,13 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'I am in the AppComponent';
         this.name = '';
+        this.showSecret = false;
+        this.log = [];
     }
+    AppComponent.prototype.onToggleDetails = function () {
+        this.showSecret = !this.showSecret;
+        this.log.push(this.log.length + 1);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',
