@@ -15,7 +15,8 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.onToggleDetails = function () {
         this.showSecret = !this.showSecret;
-        this.log.push(this.log.length + 1);
+        //   this.log.push(this.log.length + 1);
+        this.log.push(new Date());
     };
     AppComponent = __decorate([
         core_1.Component({
