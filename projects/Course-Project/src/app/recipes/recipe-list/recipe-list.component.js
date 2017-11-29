@@ -6,9 +6,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
+var recipes_model_1 = require('../recipes.model');
 var RecipeListComponent = (function () {
     function RecipeListComponent() {
-        this.reciped = [];
+        this.recipes = [
+            new recipes_model_1.Recipe('Test Recipe', 'This is simply a test', "http://www.seriouseats.com/recipes/assets_c/2015/01/20150119-pressure-cooker-chicken-stew-food-lab-11-thumb-1500xauto-418088.jpg")
+        ];
     }
     RecipeListComponent.prototype.ngOnInit = function () {
     };
