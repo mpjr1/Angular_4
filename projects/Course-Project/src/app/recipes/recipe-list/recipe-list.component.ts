@@ -8,6 +8,7 @@ import { Recipe } from '../recipes.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
+    new Recipe('Test Recipe', 'This is simply a test', "http://www.seriouseats.com/recipes/assets_c/2015/01/20150119-pressure-cooker-chicken-stew-food-lab-11-thumb-1500xauto-418088.jpg"),
     new Recipe('Test Recipe', 'This is simply a test', "http://www.seriouseats.com/recipes/assets_c/2015/01/20150119-pressure-cooker-chicken-stew-food-lab-11-thumb-1500xauto-418088.jpg")
     ];
   constructor() { }

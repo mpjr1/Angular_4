@@ -10,6 +10,7 @@ var recipes_model_1 = require('../recipes.model');
 var RecipeListComponent = (function () {
     function RecipeListComponent() {
         this.recipes = [
+            new recipes_model_1.Recipe('Test Recipe', 'This is simply a test', "http://www.seriouseats.com/recipes/assets_c/2015/01/20150119-pressure-cooker-chicken-stew-food-lab-11-thumb-1500xauto-418088.jpg"),
             new recipes_model_1.Recipe('Test Recipe', 'This is simply a test', "http://www.seriouseats.com/recipes/assets_c/2015/01/20150119-pressure-cooker-chicken-stew-food-lab-11-thumb-1500xauto-418088.jpg")
         ];
     }
