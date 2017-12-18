@@ -14,18 +14,18 @@ var CockpitComponent = (function () {
     CockpitComponent.prototype.ngOnInit = function () {
     };
     CockpitComponent.prototype.onAddServer = function () {
-        this.serverElements.push({
-            type: 'server',
-            name: this.newServerName,
-            content: this.newServerContent
-        });
+        // this.serverElements.push({
+        //   type: 'server',
+        //   name: this.newServerName,
+        //   content: this.newServerContent
+        // });
     };
     CockpitComponent.prototype.onAddBlueprint = function () {
-        this.serverElements.push({
-            type: 'blueprint',
-            name: this.newServerName,
-            content: this.newServerContent
-        });
+        // this.serverElements.push({
+        //   type: 'blueprint',
+        //   name: this.newServerName,
+        //   content: this.newServerContent
+        // });
     };
     CockpitComponent = __decorate([
         core_1.Component({
