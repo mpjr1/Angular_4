@@ -8,25 +8,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var CockpitComponent = (function () {
     function CockpitComponent() {
+        this.serverCreated = new core_1.EventEmitter();
+        this.blueprintCreated = new core_1.EventEmitter();
         this.newServerName = '';
         this.newServerContent = '';
     }
     CockpitComponent.prototype.ngOnInit = function () {
     };
     CockpitComponent.prototype.onAddServer = function () {
-        // this.serverElements.push({
-        //   type: 'server',
-        //   name: this.newServerName,
-        //   content: this.newServerContent
-        // });
+        this.serverCreated.emit({
+            serverName: this.newServerName,
+            serverContent: this.newServerContent
+        });
     };
     CockpitComponent.prototype.onAddBlueprint = function () {
-        // this.serverElements.push({
-        //   type: 'blueprint',
-        //   name: this.newServerName,
-        //   content: this.newServerContent
-        // });
+        this.blueprintCreated.emit({
+            serverName: this.newServerName,
+            serverContent: this.newServerContent
+        });
     };
+    __decorate([
+        core_1.Output()
+    ], CockpitComponent.prototype, "serverCreated");
+    __decorate([
+        core_1.Output()
+    ], CockpitComponent.prototype, "blueprintCreated");
     CockpitComponent = __decorate([
         core_1.Component({
             selector: 'app-cockpit',

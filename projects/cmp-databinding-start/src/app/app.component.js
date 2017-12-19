@@ -10,6 +10,20 @@ var AppComponent = (function () {
     function AppComponent() {
         this.serverElements = [{ type: 'server', name: 'Testserver', content: 'Just a test!' }];
     }
+    AppComponent.prototype.onServerAdded = function (serverData) {
+        this.serverElements.push({
+            type: 'server',
+            name: serverData.serverName,
+            content: serverData.serverContent
+        });
+    };
+    AppComponent.prototype.onBlueprintAdded = function (blueprintData) {
+        this.serverElements.push({
+            type: 'blueprint',
+            name: blueprintData.serverName,
+            content: blueprintData.serverContent
+        });
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',
