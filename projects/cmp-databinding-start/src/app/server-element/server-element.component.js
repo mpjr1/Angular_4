@@ -12,7 +12,7 @@ var ServerElementComponent = (function () {
     ServerElementComponent.prototype.ngOnInit = function () {
     };
     __decorate([
-        core_1.Input()
+        core_1.Input('srvElement')
     ], ServerElementComponent.prototype, "element");
     ServerElementComponent = __decorate([
         core_1.Component({
