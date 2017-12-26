@@ -31,7 +31,7 @@ var CockpitComponent = (function () {
         core_1.Output()
     ], CockpitComponent.prototype, "serverCreated");
     __decorate([
-        core_1.Output()
+        core_1.Output('bpCreated')
     ], CockpitComponent.prototype, "blueprintCreated");
     CockpitComponent = __decorate([
         core_1.Component({
